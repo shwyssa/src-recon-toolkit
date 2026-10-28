@@ -1,0 +1,191 @@
+[
+  {
+    "name": "Apache Shiro",
+    "title": [],
+    "body": [],
+    "header": [],
+    "cookie": ["rememberMe"],
+    "note": "重点测 rememberMe 反序列化(CVE-2016-4437)、key 爆破",
+    "risk": "高"
+  },
+  {
+    "name": "Spring Boot",
+    "title": ["Whitelabel Error"],
+    "body": ["Whitelabel Error Page"],
+    "header": [],
+    "cookie": [],
+    "note": "测 /actuator/env、/actuator/heapdump 等端点泄露",
+    "risk": "高"
+  },
+  {
+    "name": "Swagger/OpenAPI",
+    "title": ["Swagger", "API Documentation"],
+    "body": ["swagger-ui", "Swagger UI", "swagger.json"],
+    "header": [],
+    "cookie": [],
+    "note": "测 /v2/api-docs、/v3/api-docs、/swagger-ui.html 接口泄露",
+    "risk": "中"
+  },
+  {
+    "name": "ThinkPHP",
+    "title": ["ThinkPHP"],
+    "body": ["ThinkPHP", "thinkphp"],
+    "header": [],
+    "cookie": [],
+    "note": "看版本，测对应 RCE 漏洞",
+    "risk": "高"
+  },
+  {
+    "name": "致远OA(Seeyon)",
+    "title": ["致远", "seeyon"],
+    "body": ["/seeyon/", "seeyon", "Seeyon"],
+    "header": [],
+    "cookie": [],
+    "note": "测致远历史漏洞(任意文件上传、SQL注入等)",
+    "risk": "高"
+  },
+  {
+    "name": "泛微OA(e-cology)",
+    "title": ["泛微", "e-cology", "Weaver"],
+    "body": ["/wui/", "ecology", "泛微", "weaver"],
+    "header": [],
+    "cookie": ["ecology_JSessionid"],
+    "note": "测 SQL注入、任意文件上传、RCE 等",
+    "risk": "高"
+  },
+  {
+    "name": "用友NC/U8",
+    "title": ["用友", "NCCloud", "UFIDA"],
+    "body": ["用友", "NCCloud", "ufida", "UFIDA"],
+    "header": [],
+    "cookie": [],
+    "note": "测 NC 反序列化、文件上传等",
+    "risk": "高"
+  },
+  {
+    "name": "蓝凌OA(Landray)",
+    "title": ["蓝凌", "Landray"],
+    "body": ["Landray", "蓝凌", "/sys/"],
+    "header": [],
+    "cookie": [],
+    "note": "测前台反序列化、SQL注入等",
+    "risk": "高"
+  },
+  {
+    "name": "通达OA(Tongda)",
+    "title": ["通达OA"],
+    "body": ["/ispirit/", "通达OA", "td_oa"],
+    "header": [],
+    "cookie": [],
+    "note": "测文件上传、SQL注入等",
+    "risk": "高"
+  },
+  {
+    "name": "WordPress",
+    "title": [],
+    "body": ["wp-content", "wp-includes"],
+    "header": [],
+    "cookie": ["wordpress"],
+    "note": "测插件/主题漏洞、弱口令、备份",
+    "risk": "中"
+  },
+  {
+    "name": "DedeCMS(织梦)",
+    "title": ["织梦", "DedeCMS"],
+    "body": ["Powered by DedeCMS", "dedecms"],
+    "header": [],
+    "cookie": [],
+    "note": "测历史 SQL注入、后台弱口令",
+    "risk": "中"
+  },
+  {
+    "name": "帝国CMS(EmpireCMS)",
+    "title": ["帝国"],
+    "body": ["EmpireCMS", "帝国"],
+    "header": [],
+    "cookie": [],
+    "note": "测历史漏洞",
+    "risk": "中"
+  },
+  {
+    "name": "Discuz",
+    "title": [],
+    "body": ["Powered by Discuz", "discuz"],
+    "header": [],
+    "cookie": [],
+    "note": "测 X3.x 历史漏洞",
+    "risk": "中"
+  },
+  {
+    "name": "phpMyAdmin",
+    "title": ["phpMyAdmin"],
+    "body": ["phpMyAdmin"],
+    "header": [],
+    "cookie": ["phpMyAdmin"],
+    "note": "测弱口令、历史漏洞",
+    "risk": "中"
+  },
+  {
+    "name": "WebLogic",
+    "title": ["WebLogic"],
+    "body": ["WebLogic", "console.portal"],
+    "header": [],
+    "cookie": [],
+    "note": "测反序列化(T3/IIOP)、console 弱口令（端口 7001 需人工确认）",
+    "risk": "高"
+  },
+  {
+    "name": "Apache Tomcat",
+    "title": ["Apache Tomcat"],
+    "body": ["Apache Tomcat"],
+    "header": [],
+    "cookie": [],
+    "note": "测 manager 弱口令、PUT 上传（端口 8080 需人工确认）",
+    "risk": "中"
+  },
+  {
+    "name": "Jenkins",
+    "title": ["Jenkins"],
+    "body": ["Dashboard [Jenkins]", "Jenkins"],
+    "header": [],
+    "cookie": [],
+    "note": "测未授权、script console、弱口令",
+    "risk": "高"
+  },
+  {
+    "name": "GitLab",
+    "title": ["GitLab"],
+    "body": ["GitLab"],
+    "header": [],
+    "cookie": ["_gitlab_session"],
+    "note": "测未授权注册、历史 RCE、信息泄露",
+    "risk": "高"
+  },
+  {
+    "name": "Nacos",
+    "title": ["Nacos"],
+    "body": ["Nacos"],
+    "header": [],
+    "cookie": [],
+    "note": "测默认口令、未授权、认证绕过",
+    "risk": "高"
+  },
+  {
+    "name": "若依(RuoYi)",
+    "title": ["若依", "RuoYi"],
+    "body": ["RuoYi", "若依"],
+    "header": [],
+    "cookie": [],
+    "note": "测定时任务 RCE、SQL注入、默认口令",
+    "risk": "高"
+  },
+  {
+    "name": "宝塔面板(BT)",
+    "title": ["宝塔", "BaoTa"],
+    "body": ["bt.cn", "宝塔"],
+    "header": [],
+    "cookie": [],
+    "note": "测 phpMyAdmin 泄露、面板弱口令",
+    "risk": "中"
+  }
+]
