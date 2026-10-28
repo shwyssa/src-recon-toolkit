@@ -1,0 +1,9 @@
+﻿__pycache__/
+*.py[cod]
+*.bak
+output/
+domains.txt
+_state.json
+.idea/
+.vscode/
+.DS_Store
